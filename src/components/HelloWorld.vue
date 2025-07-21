@@ -6,12 +6,12 @@
 </template>
 <script setup>
 // 汉化
-import customTranslate from './customTranslate'
+// import customTranslate from './customTranslate'
 
 // 引入相关依赖
 import propertiesPanelModule from "bpmn-js-properties-panel";
 import propertiesProviderModule from "bpmn-js-properties-panel/lib/provider/camunda";
-import bpmnModdleDescriptor from 'bpmn-moddle/resources/bpmn/json/bpmn.json'
+// import bpmnModdleDescriptor from 'bpmn-moddle/resources/bpmn/json/bpmn.json'
 
 import camundaModdleDescriptor from "camunda-bpmn-moddle/resources/camunda";
 import BpmnModeler from "bpmn-js/lib/Modeler";
@@ -34,12 +34,12 @@ async function init() {
       // 右边的属性栏
       propertiesProviderModule,
       propertiesPanelModule,
-      {
-        translate: [
-          "value",
-          customTranslate
-        ]
-      }
+      // {
+      //   translate: [
+      //     "value",
+      //     customTranslate
+      //   ]
+      // }
     ],
     moddleExtensions: {
       // bpmn: bpmnModdleDescriptor,
